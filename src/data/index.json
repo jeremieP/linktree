@@ -9,7 +9,7 @@
     }
   },
   "seo": {
-    "title": "Jérémie Pereira - ",
+    "title": "Jérémie Pereira",
     "description": ""
   },
   "links": [
@@ -42,6 +42,10 @@
     {
       "title": "Github",
       "url": "https://www.github.com/jeremieP"
+    },
+    {
+      "title": "Linkedin",
+      "url": "https://www.linkedin.com/jeremie.pereira"
     }
   ]
 }
