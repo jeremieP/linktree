@@ -23,8 +23,8 @@ export default function Home() {
           width={120}
           height={120}
         />
-        <h1 className="font-bold mt-4 mb-1 text-xl text-white">{data.me.name}</h1>
-        <h2 className="font-bold mb-8 text-xl text-white">
+        <h1 className="font-bold mt-4 mb-1 text-xl text-center text-white">{data.me.name}</h1>
+        <h2 className="font-bold mb-8 text-xl text-center text-white">
           {data.me.job.title} - <a className="underline hover:no-underline" href={data.me.job.url} target="_blank" rel="noopener noreferrer">{data.me.job.company}</a>
         </h2>
         {data.links.map((link) => (
