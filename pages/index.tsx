@@ -12,6 +12,7 @@ export default function Home() {
         <title>{data.seo.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content={data.seo.description} />
       </Head>
       <div className="flex items-center flex-col mx-auto w-full h-screen pt-16 px-8">
         <Image
