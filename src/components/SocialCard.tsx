@@ -2,8 +2,25 @@ import type { Social } from '../types'
 import type { ReactElement } from 'react'
 import dynamic from 'next/dynamic'
 
-const TwitterIcon = dynamic(() => import('./TwitterIcon').then((module) => module.TwitterIcon))
-const GithubIcon = dynamic(() => import('./GithubIcon').then((module) => module.GithubIcon))
+const TwitterIcon = dynamic(() => import('./Icons/TwitterIcon').then((module) => module.TwitterIcon))
+const GithubIcon = dynamic(() => import('./Icons/GithubIcon').then((module) => module.GithubIcon))
+const LinkedinIcon = dynamic(() => import('./Icons/LinkedinIcon').then((module) => module.LinkedinIcon))
+
+const getIconComponent = (url:string): ReactElement => {
+  switch(true) {
+    case url.includes('twitter'):
+      return <TwitterIcon />
+      
+    case url.includes('github'):
+      return <GithubIcon /> 
+
+    case url.includes('linkedin'):
+      return <LinkedinIcon /> 
+
+    default:
+      return <></>
+  }
+}
 
 export const SocialCard = ({ url, title }: Social):ReactElement => (
   <a
@@ -13,12 +30,6 @@ export const SocialCard = ({ url, title }: Social):ReactElement => (
     target="_blank"
     rel="noopener noreferrer"
   >
-    {
-      url.includes('twitter') ? (
-        <TwitterIcon />
-      ) : url.includes('github') ? (
-        <GithubIcon />
-      ) : null
-    }
+    {getIconComponent(url)}
   </a>
 )
