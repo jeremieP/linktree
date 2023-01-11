@@ -20,8 +20,8 @@ export default function Home() {
           className="rounded-full"
           alt={data.me.name}
           src={data.me.avatar}
-          width={96}
-          height={96}
+          width={120}
+          height={120}
         />
         <h1 className="font-bold mt-4 mb-1 text-xl text-white">{data.me.name}</h1>
         <h2 className="font-bold mb-8 text-xl text-white">
