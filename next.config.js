@@ -9,6 +9,9 @@ const nextConfig = {
       { loader: '@next/font/google', options: { subsets: ['latin'] } },
     ],
   },
+  compiler: {
+    removeConsole: true,
+  },
 }
 
 module.exports = nextConfig
