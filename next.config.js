@@ -4,11 +4,7 @@ const nextConfig = {
   images: {
     domains: ['pbs.twimg.com', 'static-cdn.jtvnw.net'],
   },
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } },
-    ],
-  },
+  experimental: {},
   compiler: {
     removeConsole: true,
   },

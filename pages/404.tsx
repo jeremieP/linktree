@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { VT323 } from '@next/font/google'
+import { VT323 } from 'next/font/google'
 
 import { DeadLink } from '../src/components/DeadLink'
 
@@ -8,7 +8,8 @@ import data from '../src/data/index.json'
 import { useEffect } from 'react'
 
 const VT323Font = VT323({
-  weight: "400"
+  weight: "400",
+  subsets: ['latin'],
 })
 
 export default function NotFound() {
