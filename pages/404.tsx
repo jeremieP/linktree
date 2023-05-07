@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 const VT323Font = VT323({
   weight: "400",
   subsets: ['latin'],
+  display: 'swap',
 })
 
 export default function NotFound() {
