@@ -19,10 +19,11 @@ export interface Data {
     }
     avatar: string
   }
-  seo: {
-    title: string
-    description: string
-  }
   links: Link[]
   socials: Social[]
+}
+
+export interface SeoData {
+  title: string
+  description: string
 }
