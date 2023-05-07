@@ -1,6 +1,8 @@
 import '../src/styles/globals.css'
 import data from '../src/data/index.json'
 
+import { Analytics } from '@vercel/analytics/react'
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -19,7 +21,10 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+        </body>
     </html>
   )
 }
