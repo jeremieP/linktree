@@ -4,7 +4,9 @@ const nextConfig = {
   images: {
     domains: ['pbs.twimg.com', 'static-cdn.jtvnw.net'],
   },
-  experimental: {},
+  experimental: {
+    appDir: true,
+  },
   compiler: {
     removeConsole: true,
   },
